@@ -37,7 +37,7 @@ jobs:
       - name: Install Jupyter Book and Dependencies
         run: pip install -r requirements.txt
       - name: Build HTML Assets
-        run: jupyter book build --html --execute
+        run: jupyter book build --html #--execute
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
