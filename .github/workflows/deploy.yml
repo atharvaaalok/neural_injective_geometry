@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 20.x
       - name: Install Jupyter Book and Dependencies
-        run: pip install -r requirements.txt
+        run: pip3 install -r requirements.txt
       - name: Build HTML Assets
         run: jupyter book build --html #--execute
       - name: Upload artifact
