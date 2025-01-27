@@ -1,7 +1,6 @@
 # This file was created automatically with `myst init --gh-pages` 🪄 💚
-# And then modified by @agoose77
 
-name: Jupyter Book GitHub Pages Deploy
+name: MyST GitHub Pages Deploy
 on:
   push:
     # Runs on pushes targeting the default branch
@@ -19,7 +18,7 @@ permissions:
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 jobs:
   deploy:
@@ -33,15 +32,15 @@ jobs:
         uses: actions/configure-pages@v3
       - uses: actions/setup-node@v4
         with:
-          node-version: 20.x
-      - name: Install Jupyter Book and Dependencies
-        run: pip3 install -r requirements.txt
+          node-version: 18.x
+      - name: Install MyST Markdown
+        run: npm install -g mystmd
       - name: Build HTML Assets
-        run: jupyter book build --html #--execute
+        run: myst build --html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./_build/html"
+          path: './_build/html'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
