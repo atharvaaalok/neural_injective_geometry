@@ -1,0 +1,29 @@
+version: 1
+project:
+  title: Neural Injective Geometry
+  date: 2025/01/21
+  jupyter: true
+  github: https://github.com/atharvaaalok/neural_injective_geometry
+  authors:
+    - name: Atharva Aalok
+      email: atharvaaalok@gmail.com
+      corresponding: true
+      affiliations: Stanford University
+      twitter: atharvaaalok
+      github: atharvaaalok
+  toc:
+    - file: introduction.ipynb
+    - file: the_idea_injective_net.ipynb
+    - file: auxilliary_networks.ipynb
+    - file: monotonic_networks.ipynb
+    - file: curve_fit_showcase.ipynb
+    - file: extending_to_3D.ipynb
+    - title: Appendix
+      children:
+        - file: ./notes/curve_similarity_measures/curve_similarity_measures.ipynb
+site:
+  template: book-theme
+  title: Neural Injective Geometry
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
