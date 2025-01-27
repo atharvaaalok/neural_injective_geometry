@@ -1,7 +1,0 @@
-ipykernel
-jupyter-server
-pytorch
-numpy
-matplotlib
-ipywidgets
-
