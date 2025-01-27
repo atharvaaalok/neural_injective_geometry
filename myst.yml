@@ -2,7 +2,9 @@ version: 1
 project:
   title: Neural Injective Geometry
   date: 2025/01/21
-  jupyter: true
+  jupyter: 'binder'
+  requirements:
+    - 'environment.yml'
   github: https://github.com/atharvaaalok/neural_injective_geometry
   authors:
     - name: Atharva Aalok
