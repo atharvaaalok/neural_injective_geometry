@@ -1,6 +1,6 @@
 ipykernel
 jupyter-server
-pytorch
+torch
 numpy
 matplotlib
 ipywidgets
